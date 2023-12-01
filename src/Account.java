@@ -42,8 +42,8 @@ public class Account extends JFrame{
         trans6.setVisible(false);
 
         setContentPane(account);
-        setTitle("Menu");
-        setSize(800,600);
+        setTitle("Account");
+        setSize(950,600);
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -56,7 +56,7 @@ public class Account extends JFrame{
                 String data = myReader.nextLine();
                 counter++;
                 if(counter == 3){
-                    balance.setText("Balance: "+ data);
+                    balance.setText("Balance (Chequing): "+ data);
                 }
                 if(counter == 6){
                     trans1.setText(data);
@@ -136,7 +136,7 @@ public class Account extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                information cool = new information();
+                information cool = new information(cool2);
 
             }
         });
@@ -145,7 +145,7 @@ public class Account extends JFrame{
     private void createUIComponents() throws IOException {
         BufferedImage bufferedImage = ImageIO.read(new File("9131529.png"));
 
-        Image image = bufferedImage.getScaledInstance(90, 90, Image.SCALE_DEFAULT);
+        Image image = bufferedImage.getScaledInstance(150, 150, Image.SCALE_DEFAULT);
         ImageIcon newIcon = new ImageIcon(image);
         image1 = new JLabel(newIcon);
     }

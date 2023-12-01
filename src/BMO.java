@@ -19,10 +19,12 @@ public class BMO extends JFrame{
     private JButton newLoginButton;
     private JButton loginButton;
     private JButton backButton;
+    private JLabel additional;
 
     public BMO(){
+        additional.setText("");
         setContentPane(BMO);
-        setTitle("Menu");
+        setTitle("BMO");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -48,10 +50,12 @@ public class BMO extends JFrame{
                         }
 
                     }
+                    additional.setText("Wrong information");
                     textArea2.setText("");
                     textArea1.setText("");
 
                 }catch(Exception exception){
+                    additional.setText("Does not exist");
                     textArea2.setText("");
                     textArea1.setText("");
 
@@ -62,6 +66,9 @@ public class BMO extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
                     File myObj = new File(textArea1.getText()+".txt");
                     if(!myObj.createNewFile()){
                         int num = 3/0;
@@ -74,11 +81,14 @@ public class BMO extends JFrame{
                     myWriter.write("0\n");
                     myWriter.write("0");
                     myWriter.close();
+                    dispose();
+                    Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
+                }catch (ArithmeticException ex){
+                    additional.setText("Can't do that");
+
                 }
-                dispose();
-                Account cool = new Account(textArea1.getText());
             }
         });
     }

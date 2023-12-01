@@ -18,10 +18,11 @@ public class Choose_bank extends JFrame {
     private JLabel ScotiaBank;
     private JLabel BMO;
     private JLabel National;
+    private JButton exitButton;
 
     public Choose_bank(){
         setContentPane(Scene1);
-        setTitle("Menu");
+        setTitle("Choose Bank");
         setSize(800,600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -66,6 +67,12 @@ public class Choose_bank extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 dispose();
                 National cool = new National();
+            }
+        });
+        exitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System. exit(0);
             }
         });
     }

@@ -18,10 +18,11 @@ public class TD extends JFrame {
     private JButton newLoginButton;
     private JButton loginButton;
     private JButton backButton;
+    private JLabel additional;
 
     public TD() {
         setContentPane(TD);
-        setTitle("Menu");
+        setTitle("TD");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -49,10 +50,14 @@ public class TD extends JFrame {
                     }
                     textArea2.setText("");
                     textArea1.setText("");
+                    additional.setText("Information wrong");
+
 
                 }catch(Exception exception){
                     textArea2.setText("");
                     textArea1.setText("");
+                    additional.setText("Does not exist");
+
 
                 }
             }
@@ -68,6 +73,9 @@ public class TD extends JFrame {
 //                    throw new RuntimeException(ex);
 //                }
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
                     File myObj = new File(textArea1.getText()+".txt");
                     if(!myObj.createNewFile()){
                         int num = 3/0;
@@ -84,7 +92,10 @@ public class TD extends JFrame {
                     dispose();
                     Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
+                } catch (ArithmeticException ex){
+                    additional.setText("Can't do that");
+
                 }
 
             }

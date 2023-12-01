@@ -17,10 +17,11 @@ public class RBC extends JFrame{
     private JButton newLoginButton;
     private JButton loginButton;
     private JButton backButton;
+    private JLabel additional;
 
     public RBC(){
         setContentPane(RBC);
-        setTitle("Menu");
+        setTitle("RBC");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -48,10 +49,13 @@ public class RBC extends JFrame{
                     }
                     textArea2.setText("");
                     textArea1.setText("");
+                    additional.setText("Information wrong");
 
                 }catch(Exception exception){
                     textArea2.setText("");
                     textArea1.setText("");
+                    additional.setText("Does not exist");
+
 
                 }
             }
@@ -60,6 +64,9 @@ public class RBC extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
                     File myObj = new File(textArea1.getText()+".txt");
                     if(!myObj.createNewFile()){
                         int num = 3/0;
@@ -73,11 +80,14 @@ public class RBC extends JFrame{
                     myWriter.write("0");
 
                     myWriter.close();
+                    dispose();
+                    Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
+                }catch (ArithmeticException ex){
+                    additional.setText("Can't do that");
+
                 }
-                dispose();
-                Account cool = new Account(textArea1.getText());
             }
         });
     }

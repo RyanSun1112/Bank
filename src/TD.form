@@ -16,7 +16,9 @@
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="ID Bank Login in"/>
+          <font name="Consolas" size="20" style="1"/>
+          <foreground color="-394241"/>
+          <text value="TD Bank Login in"/>
         </properties>
       </component>
       <component id="f4c32" class="javax.swing.JLabel" binding="ImageTD" custom-create="true">
@@ -34,6 +36,8 @@
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-394241"/>
           <text value="Login in with your credentiels"/>
         </properties>
       </component>
@@ -43,6 +47,8 @@
           <gridbag top="0" left="0" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="Email"/>
         </properties>
       </component>
@@ -53,7 +59,11 @@
           </grid>
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
       </component>
       <component id="7855b" class="javax.swing.JLabel">
         <constraints>
@@ -61,6 +71,8 @@
           <gridbag top="0" left="0" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="PIN"/>
         </properties>
       </component>
@@ -71,7 +83,11 @@
           </grid>
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
       </component>
       <component id="18afc" class="javax.swing.JButton" binding="newLoginButton" default-binding="true">
         <constraints>
@@ -79,6 +95,9 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-459777"/>
           <text value="New Login"/>
         </properties>
       </component>
@@ -88,16 +107,31 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="Login"/>
         </properties>
       </component>
       <component id="97088" class="javax.swing.JButton" binding="backButton" default-binding="true">
         <constraints>
           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="10" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="36a96" class="javax.swing.JLabel" binding="additional">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Back"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

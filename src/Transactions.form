@@ -13,32 +13,113 @@
     <children>
       <component id="d16f3" class="javax.swing.JLabel" binding="Transactions">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="20" style="1"/>
+          <foreground color="-394241"/>
           <text value="Transactions"/>
         </properties>
       </component>
       <component id="e2e9b" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag top="10" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-4820169"/>
           <editable value="false"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-1"/>
           <text value="No transactions"/>
         </properties>
       </component>
       <component id="a12e6" class="javax.swing.JButton" binding="backButton" default-binding="true">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="a4ebe" class="javax.swing.JButton" binding="menuButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Menu"/>
+        </properties>
+      </component>
+      <component id="703ee" class="javax.swing.JButton" binding="accountButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Account"/>
+        </properties>
+      </component>
+      <component id="f183a" class="javax.swing.JButton" binding="billsButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Bills"/>
+        </properties>
+      </component>
+      <component id="69ac4" class="javax.swing.JButton" binding="statisticsButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Statistics"/>
+        </properties>
+      </component>
+      <component id="2cbc" class="javax.swing.JButton" binding="ETransferButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="10" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="ETransfer"/>
+        </properties>
+      </component>
+      <component id="cc4da" class="javax.swing.JButton" binding="accountInformationButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Back"/>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14"/>
+          <foreground color="-394241"/>
+          <text value="Account Information"/>
         </properties>
       </component>
     </children>

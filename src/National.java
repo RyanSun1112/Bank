@@ -17,10 +17,11 @@ public class National extends JFrame{
     private JButton newLoginButton;
     private JButton loginButton;
     private JButton backButton;
+    private JLabel additional;
 
     public National(){
         setContentPane(NATIONAL);
-        setTitle("Menu");
+        setTitle("National");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -46,10 +47,14 @@ public class National extends JFrame{
                         }
 
                     }
+                    additional.setText("Information wrong");
+
                     textArea2.setText("");
                     textArea1.setText("");
 
                 }catch(Exception exception){
+                    additional.setText("Does not exist");
+
                     textArea2.setText("");
                     textArea1.setText("");
 
@@ -59,20 +64,31 @@ public class National extends JFrame{
         newLoginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                File myObj = new File(textArea1.getText()+".txt");
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
+                    File myObj = new File(textArea1.getText()+".txt");
+
+                    if(!myObj.createNewFile()){
+                        int num = 3/0;
+                    }
                     FileWriter myWriter = new FileWriter(myObj);
                     myWriter.write("National\n");
                     String line = textArea2.getText();
                     myWriter.write(line+"\n");
                     myWriter.write("0\n");
+                    myWriter.write("0\n");
                     myWriter.write("0");
                     myWriter.close();
+                    dispose();
+                    Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
+                }catch (ArithmeticException ex){
+                    additional.setText("Can't do that");
+
                 }
-                dispose();
-                Account cool = new Account(textArea1.getText());
             }
         });
     }

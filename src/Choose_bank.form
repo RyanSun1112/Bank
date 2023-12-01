@@ -21,18 +21,23 @@
       <component id="fca81" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag top="10" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="20" style="1"/>
+          <foreground color="-394241"/>
           <text value="Choose one of the following Banks"/>
         </properties>
       </component>
       <component id="70e0d" class="javax.swing.JLabel">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-1707777"/>
+          <font name="Consolas" size="24" style="1"/>
+          <foreground color="-394241"/>
           <text value="Welcome to the banking app"/>
         </properties>
       </component>
@@ -88,6 +93,18 @@
         </constraints>
         <properties>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="f9106" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Exit"/>
         </properties>
       </component>
     </children>

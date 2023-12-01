@@ -12,9 +12,10 @@
       <component id="b0bfd" class="javax.swing.JLabel" binding="rbc" custom-create="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag top="10" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <foreground color="-394241"/>
           <text value=""/>
         </properties>
       </component>
@@ -24,6 +25,8 @@
           <gridbag top="0" left="0" bottom="0" right="10" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="Email"/>
         </properties>
       </component>
@@ -34,7 +37,11 @@
           </grid>
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
       </component>
       <component id="48a2c" class="javax.swing.JLabel">
         <constraints>
@@ -42,6 +49,8 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="PIN"/>
         </properties>
       </component>
@@ -52,14 +61,20 @@
           </grid>
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
       </component>
       <component id="ff335" class="javax.swing.JLabel">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag top="0" left="0" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="Consolas" size="20" style="1"/>
+          <foreground color="-394241"/>
           <text value="RBC Login In"/>
         </properties>
       </component>
@@ -69,6 +84,8 @@
           <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-394241"/>
           <text value="Login with your credentiels"/>
         </properties>
       </component>
@@ -78,6 +95,9 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="New Login"/>
         </properties>
       </component>
@@ -87,16 +107,31 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
           <text value="Login"/>
         </properties>
       </component>
       <component id="39b8c" class="javax.swing.JButton" binding="backButton" default-binding="true">
         <constraints>
           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="788d1" class="javax.swing.JLabel" binding="additional">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Back"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

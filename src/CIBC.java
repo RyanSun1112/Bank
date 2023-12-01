@@ -17,12 +17,13 @@ public class CIBC extends JFrame{
     private JButton newLoginButton;
     private JButton LoginButton1;
     private JButton backButton;
+    private JLabel additional;
 
     public CIBC(){
         textArea2.setText("");
         textArea1.setText("");
         setContentPane(CIBC);
-        setTitle("Menu");
+        setTitle("CIBC");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -48,10 +49,12 @@ public class CIBC extends JFrame{
                         }
 
                     }
+                    additional.setText("Wrong information");
                     textArea2.setText("");
                     textArea1.setText("");
 
                 }catch(Exception exception){
+                    additional.setText("Does not exist");
                     textArea2.setText("");
                     textArea1.setText("");
 
@@ -62,6 +65,9 @@ public class CIBC extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
                     File myObj = new File(textArea1.getText()+".txt");
                     if(!myObj.createNewFile()){
                         int num = 3/0;
@@ -77,9 +83,9 @@ public class CIBC extends JFrame{
                     dispose();
                     Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
                 } catch (ArithmeticException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
                 }
 
             }

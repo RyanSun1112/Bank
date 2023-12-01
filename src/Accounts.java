@@ -25,7 +25,7 @@ public class Accounts extends JFrame {
 
     public Accounts(String cool2){
         setContentPane(Accounts1);
-        setTitle("Menu");
+        setTitle("Accounts");
         setSize(800,600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -63,7 +63,7 @@ public class Accounts extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                information cool = new information();
+                information cool = new information(cool2);
             }
         });
         menuButton.addActionListener(new ActionListener() {

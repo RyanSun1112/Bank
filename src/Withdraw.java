@@ -18,10 +18,11 @@ public class Withdraw extends JFrame{
     private JButton submitButton;
     private JPanel withdraw;
     private JLabel complete;
+    private JButton backButton;
 
     public Withdraw(String cool2){
         setContentPane(withdraw);
-        setTitle("Menu");
+        setTitle("Withdraw");
         setSize(800,600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -60,14 +61,16 @@ public class Withdraw extends JFrame{
                                 String formattedDate = myDateObj.format(myFormatObj);
                                 fw.write("Account 1 Transaction Withdraw of: " + textArea1.getText() + " dollars at " + formattedDate);
                                 fw.close();
+                                complete.setText("Transaction Complete");
                                 complete.setVisible(true);
 
 
 
                             }else{
-                                System.out.print("Invalid");
+                                complete.setText("Invalid");
+                                complete.setVisible(true);
                             }
-                        }else if(counter == 3 && textArea2.getText().equals("2")){
+                        }else if(counter == 4 && textArea2.getText().equals("2")){
                             int number = Integer.parseInt(data);
                             if( number > Integer.parseInt(textArea1.getText())){
                                 myReader = new Scanner(new File(cool2 + ".txt"));
@@ -90,14 +93,16 @@ public class Withdraw extends JFrame{
                                 String formattedDate = myDateObj.format(myFormatObj);
                                 fw.write("Account 2 Transaction Withdraw of: " + textArea1.getText() + " dollars at " + formattedDate);
                                 fw.close();
+                                complete.setText("Transaction Complete");
                                 complete.setVisible(true);
 
 
 
                             }else{
-                                System.out.print("Invalid");
+                                complete.setText("Invalid");
+                                complete.setVisible(true);
                             }
-                        }else if(counter == 3 && textArea2.getText().equals("3")){
+                        }else if(counter == 5 && textArea2.getText().equals("3")){
                         int number = Integer.parseInt(data);
                         if( number > Integer.parseInt(textArea1.getText())){
                             myReader = new Scanner(new File(cool2 + ".txt"));
@@ -121,21 +126,38 @@ public class Withdraw extends JFrame{
                             String formattedDate = myDateObj.format(myFormatObj);
                             fw.write("Account 3 Transaction Withdraw of: " + textArea1.getText() + " dollars at " + formattedDate);
                             fw.close();
+                            complete.setText("Transaction Complete");
                             complete.setVisible(true);
 
 
 
                         }else{
-                            System.out.print("Invalid");
+                            complete.setText("Invalid");
+                            complete.setVisible(true);
                         }
                     }
 
                     }
+                    textArea1.setText("");
+                    textArea2.setText("");
                 } catch (FileNotFoundException ex) {
-                    throw new RuntimeException(ex);
+                    textArea1.setText("");
+                    textArea2.setText("");
+                    complete.setText("Invalid");
+                    complete.setVisible(true);
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    textArea1.setText("");
+                    textArea2.setText("");
+                    complete.setText("Invalid");
+                    complete.setVisible(true);
                 }
+            }
+        });
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                Account cool = new Account(cool2);
             }
         });
     }

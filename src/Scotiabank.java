@@ -17,10 +17,11 @@ public class Scotiabank extends JFrame{
     private JButton newLoginButton;
     private JButton loginButton;
     private JButton backButton;
+    private JLabel additional;
 
     public Scotiabank(){
         setContentPane(ScotiaBank);
-        setTitle("Menu");
+        setTitle("Scotiabank");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -48,8 +49,11 @@ public class Scotiabank extends JFrame{
                     }
                     textArea2.setText("");
                     textArea1.setText("");
+                    additional.setText("Information wrong");
 
                 }catch(Exception exception){
+                    additional.setText("Does not exist");
+
                     textArea2.setText("");
                     textArea1.setText("");
 
@@ -60,6 +64,9 @@ public class Scotiabank extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    if(textArea1.getText().equals("")|| textArea2.getText().equals("")){
+                        int num = 3/0;
+                    }
                     File myObj = new File(textArea1.getText()+".txt");
                     if(!myObj.createNewFile()){
                         int num = 3/0;
@@ -72,11 +79,14 @@ public class Scotiabank extends JFrame{
                     myWriter.write("0\n");
                     myWriter.write("0");
                     myWriter.close();
+                    dispose();
+                    Account cool = new Account(textArea1.getText());
                 } catch (IOException ex) {
-                    throw new RuntimeException(ex);
+                    additional.setText("Can't do that");
+                }catch (ArithmeticException ex){
+                    additional.setText("Can't do that");
+
                 }
-                dispose();
-                Account cool = new Account(textArea1.getText());
             }
         });
     }

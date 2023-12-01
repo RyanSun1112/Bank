@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="eTransfer">
+  <grid id="27dc6" binding="transfer" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-4820169"/>
+      <foreground color="-4820169"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="4ed6f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="20" style="1"/>
+          <foreground color="-394241"/>
+          <text value="eTransfer"/>
+        </properties>
+      </component>
+      <component id="9709f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Amount"/>
+        </properties>
+      </component>
+      <component id="25a78" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Account (1, 2 or 3)"/>
+        </properties>
+      </component>
+      <component id="756fd" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
+      </component>
+      <component id="4c5f2" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
+      </component>
+      <component id="fce1c" class="javax.swing.JButton" binding="submitButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Courier New" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Submit"/>
+        </properties>
+      </component>
+      <component id="46d83" class="javax.swing.JLabel" binding="complete">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Courier New" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Transaction Complete"/>
+        </properties>
+      </component>
+      <component id="7e4ac" class="javax.swing.JTextArea" binding="textArea3" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="DialogInput" size="14" style="1"/>
+          <foreground color="-394241"/>
+        </properties>
+      </component>
+      <component id="60f00" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-459777"/>
+          <text value="Reciever "/>
+        </properties>
+      </component>
+      <component id="822a" class="javax.swing.JButton" binding="backButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <font name="Courier New" size="14" style="1"/>
+          <foreground color="-394241"/>
+          <text value="Back"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
